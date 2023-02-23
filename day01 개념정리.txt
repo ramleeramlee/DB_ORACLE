@@ -1,0 +1,11 @@
+[개념정리]
+1. 정형데이터? - 저장할 데이터(항목)이 정해진 데이터
+2. DBMS? - DB를 곤리해주는 프로그램
+3. DBMS 종류 2가지 이상 - 오라클, MySQL
+4. SQL 약자 - Structured Query Language (구조적, 체계적으로 정리된 명령어들의 모음)
+5. SQL 종류 3가지  - DDL, DML, DCL
+6. CRUD의 약자 - Create / Read / Update / Delete 
+7. DB클라이언트 프로그램 - DBeaver
+8. DML중 데이터를 넣을 때 사용하는 구문? - INSERT 
+9. DML중 데이터를 검색 할 때 사용하는 구문?- SELECT 
+

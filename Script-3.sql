@@ -1,0 +1,3 @@
+INSERT INTO "PRODUCT2"  VALUES ('park', '1234', 'park', '011')
+
+SELECT * FROM "PRODUCT2"
