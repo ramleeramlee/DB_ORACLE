@@ -48,7 +48,7 @@ WHERE PRICE BETWEEN 3000 AND 6000
 SELECT * FROM PRODUCT3 
 
 SELECT COMPANY, NAME FROM PRODUCT3
-WHERE NOT COMPANY = 'c100'
+WHERE COMPANY != 'c100'
 
 SELECT NAME, PRICE FROM PRODUCT3
 WHERE COMPANY = 'c100' OR COMPANY = 'c200'
@@ -63,9 +63,23 @@ UPDATE PRODUCT3 SET CONTENT = '품절' WHERE PRICE = 5000
 
 UPDATE PRODUCT3 SET IMG = '0.png', PRICE = '10000' WHERE ID = '100' OR ID = '102'
 
+--> insert, delete, update의 결과는 실행된 Row수!(정수)
+--> select의 결과는 테이블이다
+
 DELETE FROM PRODUCT3 WHERE COMPANY = 'c100'
 
-DELETE FROM PRODUCT3
+--> varchar2, char의 차이
+--> varchar2(100) : var(변하다, variable) + char(문자)
+--> 2글자이면 2글자 들어갈 만큼만 저장공간을 사용
+--> 100글자이면 100글자들어갈 만큼 저장공간을 저장
+
+--> char(100) : 저장공간이 고정, 주민번호, 전화번호, 우편번호, 사번
+
+DELETE FROM PRODUCT3 -->데이터만 지움, 데이터 복구/취소(rollback, 롤백) 가능
+					--> truncate로 지우면 저장공간도 남겨두지 않고, 복구/취소 불가능
+
+
+
 
 SELECT * FROM PRODUCT3
 
